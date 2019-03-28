@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>    
+  <head>
+    <title>Youtube Sentiment Analysis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style>
+      .container {
+        max-width: 1000px;
+      }
+    
+  </style>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>Movie Trailer Sentiment Analysis</h1>
+      <form role="form" method='POST' action='/results'>
+        <div class="form-group">
+          <input type="text" name="url" class="form-control" id="url-box" placeholder="Enter YouTube URL..." style="max-width: 300px;" autofocus required>
+        </div>
+        <button type="submit" class="btn btn-default" onclick="$('#loading').show();">Submit</button>
+        <br>
+        <br/>  
+        <p>{{analysis}}</p>
+      </form>
+        <div id="loading" style="display:none;"><img src="./loading.svg" alt="" > Sentiment Analysis being applied! This may take few minutes</div>
+    </div>
+
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+</html>
