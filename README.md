@@ -10,8 +10,8 @@ csv file will all the data. Information on how I did this can be found in review
 ## Web app
 You can test the web app I created by running sentiment_web_app.py then open browser to (localhost:8090). Make sure you only use Youtube links or the model will not run. Also keep in mind that the more comments the video has then longer it will take to analyze. 
 
-![web](./images/web_app1)
-![web](./images/web_app2)
+![web](./images/web_app1.png)
+![web](./images/web_app2.png)
 
 ## Requirements
 This notebook will run in Python >= 3.5. The following packages are required:
